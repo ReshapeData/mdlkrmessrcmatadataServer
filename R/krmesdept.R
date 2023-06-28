@@ -11,11 +11,11 @@
 #' @export
 #'
 #' @examples viewacctserver()  
-krmesdeptsrcserver <- function(input,output,session,dms_token) {
+krmesdeptsrcmatadataserver <- function(input,output,session,dms_token) {
 
   
   shiny::observe({
-    shiny::observeEvent(input$btn_krmesdeptsrc_view,
+    shiny::observeEvent(input$btn_krmesdeptsrcmatadata_view,
                         {
                             sql = 'select * from rds_kr_mes_src_bd_department'
                             
@@ -51,7 +51,7 @@ krmesdeptsrcserver <- function(input,output,session,dms_token) {
                                             
                                             )
                             #显示数据
-                            tsui::run_dataTable2(id = 'krmesdeptsrc_view_data', data = data)
+                            tsui::run_dataTable2(id = 'krmesdeptsrcmatadata_view_data', data = data)
                             
                             
                  
@@ -74,8 +74,8 @@ krmesdeptsrcserver <- function(input,output,session,dms_token) {
 #' @export
 #'
 #' @examples HrvServer()
-krmesdeptsrcServer <- function(input,output,session,dms_token) {
+krmesdeptsrcmatadataServer <- function(input,output,session,dms_token) {
   #预览数据
-  krmesdeptsrcserver(input,output,session,dms_token)
+  krmesdeptsrcmatadataserver(input,output,session,dms_token)
 
 }

@@ -11,11 +11,11 @@
 #' @export
 #'
 #' @examples viewdeptcomparisonserver()  
-krmesflexvaluessrcserver <- function(input,output,session,dms_token) {
+krmesflexvaluessrcmatadataserver <- function(input,output,session,dms_token) {
 
   
   shiny::observe({
-    shiny::observeEvent(input$btn_krmesflexvaluessrc_view,
+    shiny::observeEvent(input$btn_krmesflexvaluessrcmatadata_view,
                         {
                             sql = 'select * from rds_kr_mes_src_bd_shippingspace'
                             
@@ -40,7 +40,7 @@ krmesflexvaluessrcserver <- function(input,output,session,dms_token) {
                                             '禁用'
                             )
                             #显示数据
-                            tsui::run_dataTable2(id = 'krmesflexvaluessrc_view_data', data = data)
+                            tsui::run_dataTable2(id = 'krmesflexvaluessrcmatadata_view_data', data = data)
                             
                             
                  
@@ -63,8 +63,8 @@ krmesflexvaluessrcserver <- function(input,output,session,dms_token) {
 #' @export
 #'
 #' @examples HrvServer()
-krmesflexvaluessrcServer <- function(input,output,session,dms_token) {
+krmesflexvaluessrcmatadataServer <- function(input,output,session,dms_token) {
   #预览数据
-  krmesflexvaluessrcserver(input,output,session,dms_token)
+  krmesflexvaluessrcmatadataserver(input,output,session,dms_token)
 
 }

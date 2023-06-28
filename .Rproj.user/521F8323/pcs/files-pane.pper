@@ -1,5 +1,5 @@
 {
-    "path" : "~/app/zzy/krmessqlquery/krmessrc/mdlkrmessrcUI",
+    "path" : "~/app/zzy/krmessqlquery/krmessrcmatadata/mdlkrmessrcmatadataServer",
     "sortOrder" : [
         {
             "ascending" : false,

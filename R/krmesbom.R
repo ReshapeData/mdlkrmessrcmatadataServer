@@ -11,11 +11,11 @@
 #' @export
 #'
 #' @examples viewacctreclassserver()  
-krmesbomsrcserver <- function(input,output,session,dms_token) {
+krmesbomsrcmatadataserver <- function(input,output,session,dms_token) {
 
   
   shiny::observe({
-    shiny::observeEvent(input$btn_krmesbomsrc_view,
+    shiny::observeEvent(input$btn_krmesbomsrcmatadata_view,
                         {
                             sql = 'select * from rds_kr_mes_src_bd_billmaterials'
                             
@@ -92,7 +92,7 @@ krmesbomsrcserver <- function(input,output,session,dms_token) {
                                             
                             )
                             #显示数据
-                            tsui::run_dataTable2(id = 'krmesbomsrc_view_data', data = data)
+                            tsui::run_dataTable2(id = 'krmesbomsrcmatadata_view_data', data = data)
                             
                             
                  
@@ -115,8 +115,8 @@ krmesbomsrcserver <- function(input,output,session,dms_token) {
 #' @export
 #'
 #' @examples HrvServer()
-krmesbomsrcServer <- function(input,output,session,dms_token) {
+krmesbomsrcmatadataServer <- function(input,output,session,dms_token) {
   #预览数据
-  krmesbomsrcserver(input,output,session,dms_token)
+  krmesbomsrcmatadataserver(input,output,session,dms_token)
 
 }
