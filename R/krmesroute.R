@@ -39,6 +39,7 @@ krmesroutesrcmatadataserver <- function(input, output, session, dms_token) {
                             '工作中心',
                             '加工车间',
                             '作业',
+                            '工序说明',
                             '工序控制码',
                             '活动一数量',
                             '活动一单位',
