@@ -25,8 +25,6 @@ krmesroutesrcmatadataserver <- function(input, output, session, dms_token) {
                             '工艺路线编码',
                             '工艺路线名称',
                             '物料编码',
-                            '物料名称',
-                            '规格型号',
                             '数据状态',
                             '禁用状态',
                             '描述',
@@ -41,12 +39,9 @@ krmesroutesrcmatadataserver <- function(input, output, session, dms_token) {
                             '工作中心',
                             '加工车间',
                             '作业',
-                            '工序说明',
                             '工序控制码',
-                            '活动一名称',
                             '活动一数量',
                             '活动一单位',
-                            '活动二名称',
                             '活动二数量',
                             '活动二单位',
                             '物料分组',
@@ -67,7 +62,6 @@ krmesroutesrcmatadataserver <- function(input, output, session, dms_token) {
                             '活动五活动汇报量公式',
                             '活动六活动量公式',
                             '活动六活动汇报量公式',
-                            '数据采集顺序',
                             '扫描特征码',
                             '不良返修方式',
                             '触摸屏录入不良启用位置号',
@@ -85,15 +79,14 @@ krmesroutesrcmatadataserver <- function(input, output, session, dms_token) {
                             '资源',
                             '使用比例',
                             '资源需求数量',
-                            '数量单位',
                             '操作时长(分)',
                             '工时录入',
                             '手动提交报工',
                             '报工时校验本序过程记录有效性',
                             '报工时校验本序检测记录有效性',
                             '工时采集',
-                            '工时采集控制'
-                            
+                            '工时采集控制',
+                            '最新修改时间'
                             
                           )
                           #显示数据
